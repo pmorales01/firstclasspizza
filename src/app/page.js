@@ -46,8 +46,21 @@ export default function Home() {
           <h2 className="text-3xl font-bold">Featured</h2>
           <a href="#more" className="text-red-600 font-semibold hover:underline">SEE MORE</a>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="grid grid-cols-6 gap-6">
+          <div className="bg-[url('pepperoni.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
+            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+              <div>
+                <h3 className="text-lg font-semibold">$10 Pepperoni</h3>
+                <p className="text-sm">Delivery or carryout</p>
+              </div>
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg col-span-2">
             <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
@@ -61,7 +74,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+          <div className="relative overflow-hidden rounded-lg shadow-lg col-span-2">
             <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
@@ -75,20 +88,32 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
-            <img src="/deal4.jpg" alt="Big Dinner Box" className="w-full h-48 object-cover" />
-            <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
-              <h3 className="text-lg font-semibold">Big Dinner Box</h3>
-              <p className="text-sm">Feed the whole family, all from one box</p>
-              <a href="#order" className="text-red-600 font-bold">ORDER NOW</a>
+          <div className="h-56 relative overflow-hidden rounded-lg shadow-lg col-span-3">
+            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+              <div>
+                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <p className="text-sm">Delivery or carryout</p>
+              </div>
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
-            <img src="/deal5.jpg" alt="Boneless & Traditional Wings" className="w-full h-48 object-cover" />
-            <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
-              <h3 className="text-lg font-semibold">Boneless & Traditional Wings</h3>
-              <p className="text-sm">Choose from 9 signature sauces & rubs</p>
-              <a href="#order" className="text-red-600 font-bold">ORDER NOW</a>
+          <div className="relative overflow-hidden rounded-lg shadow-lg col-span-3">
+            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+              <div>
+                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <p className="text-sm">Delivery or carryout</p>
+              </div>
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
