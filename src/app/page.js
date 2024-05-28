@@ -16,12 +16,84 @@ export default function Home() {
       </header>
       {/* banner */}
       <section id="banner-home" className="bg-gray-100 flex-1 flex items-center justify-center text-center p-6">
-        <div className="banner-content">
+        <div className="banner-content h-[400px] flex flex-col justify-center items-center">
           <h2 className="text-4xl font-bold mb-4">Welcome to First Class Pizza</h2>
           <p className="text-xl mb-6">Delicious, fresh, and hot pizzas delivered to your doorstep!</p>
           <button className="bg-red-600 text-white px-6 py-2 rounded">Order Now</button>
         </div>
       </section>
+      {/* set location */}
+      <section className="flex flex-col items-center justify-center py-6 bg-white shadow-lg rounded-lg mt-6 mx-4">
+        <div className="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 11 6 11s6-5.75 6-11c0-3.314-2.686-6-6-6z" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 10a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
+          <span className="ml-2 text-lg font-semibold">Set location: Find your store to see local prices</span>
+        </div>
+        <div className="flex space-x-4">
+          <button className="flex items-center px-4 py-2 border-2 border-red-600 rounded-md">
+            <span className="font-semibold">CARRYOUT</span>
+          </button>
+          <button className="flex items-center px-4 py-2 border-2 border-red-600 rounded-md">
+            <span className="font-semibold">DELIVERY</span>
+          </button>
+        </div>
+      </section>
+      {/* Featured Deals Section */}
+      <section className="container mx-auto my-12 p-6">
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-3xl font-bold">Featured</h2>
+          <a href="#more" className="text-red-600 font-semibold hover:underline">SEE MORE</a>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+              <div>
+                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <p className="text-sm">Delivery or carryout</p>
+              </div>
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+              <div>
+                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <p className="text-sm">Delivery or carryout</p>
+              </div>
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="/deal4.jpg" alt="Big Dinner Box" className="w-full h-48 object-cover" />
+            <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
+              <h3 className="text-lg font-semibold">Big Dinner Box</h3>
+              <p className="text-sm">Feed the whole family, all from one box</p>
+              <a href="#order" className="text-red-600 font-bold">ORDER NOW</a>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="/deal5.jpg" alt="Boneless & Traditional Wings" className="w-full h-48 object-cover" />
+            <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
+              <h3 className="text-lg font-semibold">Boneless & Traditional Wings</h3>
+              <p className="text-sm">Choose from 9 signature sauces & rubs</p>
+              <a href="#order" className="text-red-600 font-bold">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Menu Section */}
       <section id="menu" className="container mx-auto my-12 p-6">
