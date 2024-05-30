@@ -50,7 +50,7 @@ export default function Home() {
           <div className="bg-[url('pepperoni.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
-                <h3 className="text-lg font-semibold">$10 Pepperoni</h3>
+                <h3 className="text-lg font-semibold">$8 Large Pepperoni</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
               <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
@@ -60,11 +60,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg col-span-2">
-            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+          <div className="bg-[url('supreme.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
-                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <h3 className="text-lg font-semibold">$10 Large Supreme</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
               <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
@@ -74,11 +73,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg col-span-2">
-            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+          <div className="bg-[url('wings.jpg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
-                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <h3 className="text-lg font-semibold">Sides Starting At $5</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
               <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
@@ -88,11 +86,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="h-56 relative overflow-hidden rounded-lg shadow-lg col-span-3">
-            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+          <div className="bg-[url('breadstick_wings_combo.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden relative overflow-hidden rounded-lg shadow-lg col-span-3">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
-                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <h3 className="text-lg font-semibold">$12 Breadsticks and Wings</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
               <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
@@ -102,8 +99,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg col-span-3">
-            <img src="/deal3.jpg" alt="$7 Deal Lover's" className="w-full h-48 object-cover" />
+          <div className="bg-[url('wings_fries_combo.jpeg')] h-64 bg-left-bottom bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-3">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
                 <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
