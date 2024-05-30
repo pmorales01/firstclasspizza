@@ -46,8 +46,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold">Featured</h2>
           <a href="#more" className="text-red-600 font-semibold hover:underline">SEE MORE</a>
         </div>
-        <div className="grid grid-cols-6 gap-6">
-          <div className="bg-[url('pepperoni.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+          <div className="bg-[url('pepperoni.jpeg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
                 <h3 className="text-lg font-semibold">$8 Large Pepperoni</h3>
@@ -60,7 +60,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-[url('supreme.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
+          <div className="bg-[url('supreme.jpeg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
                 <h3 className="text-lg font-semibold">$10 Large Supreme</h3>
@@ -73,7 +73,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-[url('wings.jpg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-2">
+          <div className="bg-[url('wings.jpg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
                 <h3 className="text-lg font-semibold">Sides Starting At $5</h3>
@@ -86,7 +86,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-[url('breadstick_wings_combo.jpeg')] h-64 bg-center bg-no-repeat bg-cover relative overflow-hidden relative overflow-hidden rounded-lg shadow-lg col-span-3">
+          <div className="bg-[url('breadstick_wings_combo.jpeg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
                 <h3 className="text-lg font-semibold">$12 Breadsticks and Wings</h3>
@@ -99,10 +99,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-[url('wings_fries_combo.jpeg')] h-64 bg-left-bottom bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-3">
+          <div className="bg-[url('wings_fries_combo.jpeg')] h-24 md:h-80 bg-left-bottom bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3">
             <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
               <div>
-                <h3 className="text-lg font-semibold">$7 Deal Lover's</h3>
+                <h3 className="text-lg font-semibold">$10 Wings and Fries</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
               <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
