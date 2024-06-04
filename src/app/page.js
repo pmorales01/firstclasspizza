@@ -1,5 +1,9 @@
 import Image from "next/image";
 import pepperoniPic from './pepperoni.jpeg'
+import SupremePic from './supreme.jpeg'
+import WingsPic from './wings.jpg'
+import BreadsticksPic from './breadstick_wings_combo.jpeg'
+import FriesPic from './wings_fries_combo.jpeg'
 
 export default function Home() {
   return (
@@ -48,20 +52,6 @@ export default function Home() {
           <a href="#more" className="text-red-600 font-semibold hover:underline">SEE MORE</a>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-          {/* <div className="bg-[url('pepperoni.jpeg')] h-24 md:h-80 bg-left bg-no-repeat bg-contain bg-white md:bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
-            <div className="absolute md:bottom-0 left-24 md:left-0 bg-white text-black p-4 max-md:h-full w-full flex flex-row justify-between items-center">
-              <div>
-                <h3 className="text-lg font-semibold">$8 Large Pepperoni</h3>
-                <p className="text-sm">Delivery or carryout</p>
-              </div>
-              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white md:self-end">   
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>s
-          </div> */}
-
           <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
             <div className="max-md:h-24 max-md:w-24 md:h-56">
               <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={pepperoniPic} alt="Pepperoni Pizza"/>
@@ -78,52 +68,64 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-[url('supreme.jpeg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
-            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+          <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+            <div className="max-md:h-24 max-md:w-24 md:h-56">
+              <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={SupremePic} alt="Supreme Pizza"/>
+            </div>
+            <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold">$10 Large Supreme</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
-              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
           </div>
-          <div className="bg-[url('wings.jpg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
-            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+          <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+            <div className="max-md:h-24 max-md:w-24 md:h-56">
+              <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={WingsPic} alt="Wings"/>
+            </div>
+            <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold">Sides Starting At $5</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
-              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
           </div>
-          <div className="bg-[url('breadstick_wings_combo.jpeg')] h-24 md:h-80 bg-center bg-no-repeat bg-cover relative overflow-hidden relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3">
-            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+          <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col">
+            <div className="max-md:h-24 max-md:w-24 md:h-56">
+              <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={BreadsticksPic} alt="Breadsticks and Wings Combo"/>
+            </div>
+            <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold">$12 Breadsticks and Wings</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
-              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
           </div>
-          <div className="bg-[url('wings_fries_combo.jpeg')] h-24 md:h-80 bg-left-bottom bg-no-repeat bg-cover relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3">
-            <div className="absolute bottom-0 left-0 bg-white text-black p-4 w-full flex flex-row justify-between">
+          <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col">
+            <div className="max-md:h-24 max-md:w-24 md:h-56">
+              <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={FriesPic} alt="Fries and Wings Combo"/>
+            </div>
+            <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold">$10 Wings and Fries</h3>
                 <p className="text-sm">Delivery or carryout</p>
               </div>
-              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white self-end">   
+              <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
@@ -132,8 +134,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
       {/* Menu Section */}
       <section id="menu" className="container mx-auto my-12 p-6">
         <h3 className="text-3xl font-bold text-center mb-8">Our Menu</h3>
