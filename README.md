@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Visit the deployed version (in progress)
+https://firstclasspizza-pmorales01-pedro-morales-projects.vercel.app/?_vercel_share=8BwigzqeUPGkjJ4vvNHsk9yYvn3ywsWl
+
 ## Getting Started
 
 First, run the development server:
