@@ -1,9 +1,9 @@
 import Image from "next/image";
-import pepperoniPic from './pepperoni.jpeg'
-import SupremePic from './supreme.jpeg'
+import pepperoniPic from './pepperoni.jpg'
+import SupremePic from './supreme.jpg'
 import WingsPic from './wings.jpg'
-import BreadsticksPic from './breadstick_wings_combo.jpeg'
-import FriesPic from './wings_fries_combo.jpeg'
+import PizzaFriesPic from './pizza_fries.jpg'
+import FriesPic from './wings_fries_combo.jpg'
 
 export default function Home() {
   return (
@@ -53,13 +53,13 @@ export default function Home() {
             <a href="#more" className="text-red-600 text-sm font-medium hover:underline">SEE MORE</a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-            <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
-              <div className="max-md:h-24 max-md:w-24 md:h-56">
+            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+              <div className="max-md:w-[162px] md:h-56">
                 <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={pepperoniPic} alt="Pepperoni Pizza"/>
               </div>
               <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-semibold">$8 Large Pepperoni</h3>
+                  <h3 className="text-sm font-semibold">$8 Large Pepperoni</h3>
                   <p className="text-sm">Delivery or carryout</p>
                 </div>
                 <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
@@ -69,13 +69,13 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
-              <div className="max-md:h-24 max-md:w-24 md:h-56">
+            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+              <div className="max-md:w-[162px] md:h-56">
                 <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={SupremePic} alt="Supreme Pizza"/>
               </div>
               <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-semibold">$10 Large Supreme</h3>
+                  <h3 className="text-sm font-semibold">$10 Large Supreme</h3>
                   <p className="text-sm">Delivery or carryout</p>
                 </div>
                 <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
@@ -85,13 +85,13 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
-              <div className="max-md:h-24 max-md:w-24 md:h-56">
+            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+              <div className="max-md:w-[162px] md:h-56">
                 <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={WingsPic} alt="Wings"/>
               </div>
               <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-semibold">Sides Starting At $5</h3>
+                  <h3 className="text-sm font-semibold">Sides Starting At $5</h3>
                   <p className="text-sm">Delivery or carryout</p>
                 </div>
                 <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
@@ -101,13 +101,13 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col">
-              <div className="max-md:h-24 max-md:w-24 md:h-56">
-                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={BreadsticksPic} alt="Breadsticks and Wings Combo"/>
+            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+              <div className="max-md:w-[162px] md:h-56">
+                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={PizzaFriesPic} alt="Pizza and Fries Combo"/>
               </div>
               <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-semibold">$12 Breadsticks and Wings</h3>
+                  <h3 className="text-sm font-semibold">$12 Pizza and Fries</h3>
                   <p className="text-sm">Delivery or carryout</p>
                 </div>
                 <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
@@ -117,13 +117,13 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="h-24 md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col">
-              <div className="max-md:h-24 max-md:w-24 md:h-56">
+            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 flex max-md:flex-row md:flex-col">
+              <div className="max-md:w-[162px] md:h-56">
                 <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={FriesPic} alt="Fries and Wings Combo"/>
               </div>
               <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-semibold">$10 Wings and Fries</h3>
+                  <h3 className="text-sm font-semibold">$10 Wings and Fries</h3>
                   <p className="text-sm">Delivery or carryout</p>
                 </div>
                 <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
