@@ -26,7 +26,7 @@ export default function Home() {
           <button className="bg-red-600 text-white px-6 py-2 rounded">Order Now</button>
         </div>
       </div>
-      <main className="mx-auto px-4">
+      <main className="px-8">
         {/* set location */}
         <div className="flex flex-col items-center justify-center py-6 bg-white shadow-lg rounded-lg my-8 border-[1px] border-red-500">
           <div className="flex items-center mb-4">
@@ -46,95 +46,97 @@ export default function Home() {
           </div>
         </div>
         {/* Featured Deals Section */}
-        <section className="flex flex-col container mx-auto my-6">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-fit mx-auto">
-            <div className="w-full col-span-1 md:col-span-6 flex max-md:justify-between items-baseline">
-              <h2 className="text-3xl lg:text-5xl font-bold">Featured</h2>
-              <a href="#more" className="text-red-600 text-sm font-medium hover:underline ml-4">
-                SEE MORE
-              </a>
-            </div>
-            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 md:max-w-80 flex max-md:flex-row md:flex-col">
-              <div className="max-md:w-[162px] md:h-56">
-                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={pepperoniPic} alt="Pepperoni Pizza"/>
+        <section className="flex justify-center	my-6 mx-auto">
+          {/* <div className="w-full"> */}
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+              <div className="w-full col-span-1 md:col-span-6 flex max-md:justify-between items-baseline">
+                <h2 className="text-3xl lg:text-5xl font-bold">Featured</h2>
+                <a href="#more" className="text-red-600 text-sm font-medium hover:underline ml-4">
+                  SEE MORE
+                </a>
               </div>
-              <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
-                <div>
-                  <h3 className="text-sm font-semibold">$8 Large Pepperoni</h3>
-                  <p className="text-sm">Delivery or carryout</p>
+              <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 w-min-content max-md:w-full md:max-w-96 flex max-md:flex-row md:flex-col">
+                <div className="max-md:w-[162px] md:h-56">
+                  <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={pepperoniPic} alt="Pepperoni Pizza"/>
                 </div>
-                <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 md:max-w-80 flex max-md:flex-row md:flex-col">
-              <div className="max-md:w-[162px] md:h-56">
-                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={SupremePic} alt="Supreme Pizza"/>
-              </div>
-              <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
-                <div>
-                  <h3 className="text-sm font-semibold">$10 Large Supreme</h3>
-                  <p className="text-sm">Delivery or carryout</p>
+                <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
+                  <div>
+                    <h3 className="text-sm font-semibold">$8 Large Pepperoni</h3>
+                    <p className="text-sm">Delivery or carryout</p>
+                  </div>
+                  <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
-                <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
               </div>
-            </div>
-            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 md:max-w-80 flex max-md:flex-row md:flex-col">
-              <div className="max-md:w-[162px] md:h-56">
-                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={WingsPic} alt="Wings"/>
-              </div>
-              <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
-                <div>
-                  <h3 className="text-sm font-semibold">Sides Starting At $5</h3>
-                  <p className="text-sm">Delivery or carryout</p>
+              <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 w-60 max-md:w-full md:max-w-80 flex max-md:flex-row md:flex-col">
+                <div className="max-md:w-[162px] md:h-56">
+                  <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={SupremePic} alt="Supreme Pizza"/>
                 </div>
-                <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col w-full">
-              <div className="max-md:w-[162px] md:h-56">
-                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={PizzaFriesPic} alt="Pizza and Fries Combo"/>
-              </div>
-              <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
-                <div>
-                  <h3 className="text-sm font-semibold">$12 Pizza and Fries</h3>
-                  <p className="text-sm">Delivery or carryout</p>
+                <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
+                  <div>
+                    <h3 className="text-sm font-semibold">$10 Large Supreme</h3>
+                    <p className="text-sm">Delivery or carryout</p>
+                  </div>
+                  <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
-                <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
               </div>
-            </div>
-            <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col place-self-end w-full">
-              <div className="max-md:w-[162px] md:h-56">
-                <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={FriesPic} alt="Fries and Wings Combo"/>
-              </div>
-              <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
-                <div>
-                  <h3 className="text-sm font-semibold">$10 Wings and Fries</h3>
-                  <p className="text-sm">Delivery or carryout</p>
+              <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2 w-60 max-md:w-max md:max-w-80 flex max-md:flex-row md:flex-col">
+                <div className="max-md:w-[162px] md:h-56">
+                  <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={WingsPic} alt="Wings"/>
                 </div>
-                <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+                <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
+                  <div>
+                    <h3 className="text-sm font-semibold">Sides Starting At $5</h3>
+                    <p className="text-sm">Delivery or carryout</p>
+                  </div>
+                  <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
+              <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col w-full">
+                <div className="max-md:w-[162px] md:h-56">
+                  <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={PizzaFriesPic} alt="Pizza and Fries Combo"/>
+                </div>
+                <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
+                  <div>
+                    <h3 className="text-sm font-semibold">$12 Pizza and Fries</h3>
+                    <p className="text-sm">Delivery or carryout</p>
+                  </div>
+                  <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="h-[132px] md:h-80 relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-3 flex max-md:flex-row md:flex-col place-self-end w-full">
+                <div className="max-md:w-[162px] md:h-56">
+                  <Image className="max-md:rounded-l-lg md:rounded-t-lg h-full w-full object-cover" src={FriesPic} alt="Fries and Wings Combo"/>
+                </div>
+                <div className="bg-white text-black p-4 max-md:h-full w-full h-24 flex flex-row justify-between items-center">
+                  <div>
+                    <h3 className="text-sm font-semibold">$10 Wings and Fries</h3>
+                    <p className="text-sm">Delivery or carryout</p>
+                  </div>
+                  <button href="#order" className="hover:bg-gray-200 rounded-full p-2 text-red-600 font-bold text-white">   
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            {/* </div> */}
+        </div>
         </section>
       </main>
       {/* Footer */}
