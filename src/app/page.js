@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         {/* Featured Deals Section */}
         <section className="flex justify-center	my-6 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-6 max-md:w-full">
             <div className="w-full col-span-1 md:col-span-6 flex max-md:justify-between items-baseline">
               <h2 className="text-3xl lg:text-5xl font-bold">Featured</h2>
               <a href="#more" className="text-red-600 text-sm font-medium hover:underline ml-4">
