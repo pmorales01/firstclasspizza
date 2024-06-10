@@ -28,13 +28,13 @@ export default function Home() {
       </div>
       <main className="px-8 mx-auto">
         {/* set location */}
-        <div className="flex flex-col items-center justify-center py-6 bg-white shadow-lg rounded-lg my-8 border-[1px] border-red-500 p-4 max-md:w-max">
+        <div className="flex flex-col items-center justify-center py-6 bg-white shadow-lg rounded-lg my-8 border-[1px] border-red-500 p-4">
           <div className="flex items-center mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 11 6 11s6-5.75 6-11c0-3.314-2.686-6-6-6z" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 10a2 2 0 110-4 2 2 0 010 4z" />
             </svg>
-            <span className="ml-2 text-lg font-semibold max-md:text-base">Set location: Find your store to see local prices</span>
+            <span className="ml-2 text-lg font-semibold max-md:text-base">Check Out Local Deals</span>
           </div>
           <div className="flex space-x-4">
             <button className="flex items-center px-4 py-2 border-2 border-red-600 rounded-md hover:bg-red-100">
